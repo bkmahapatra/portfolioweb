@@ -180,9 +180,15 @@ a {
     font-size: 25px;   
     padding-left: 5px;
 }
+/* section */
+.section{
+    margin-top: var(--mb-1);
+    padding: 5px;
+}
 /* container */
 .container{
-    
+    margin-left: 10px;
+    margin-right: 10px;
     /* border: 1px solid black; */
 }
 .section__heading{
@@ -237,7 +243,33 @@ a {
 
 
 /* ======================ABOUT======================== */
+.about_img{
+    width: 150px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+.about_desc{
+    font-weight: var(--font-medi);
+    justify-self: center;
+    text-align: center;
+}
+.about_container{
+    display: grid;
+    grid-template-rows: 1fr;
+}
 
+.section__title{
+    font-weight: var(--font-bold);
+    font-size: 1.2rem;
+    color: var(--first-text-color);
+}
+.section__subtitle{
+    font-weight: var(--font-medium);
+    font-size: 0.8rem;
+    color: var(--first-text-color-light);
+}
 /* ======================SKILLS======================== */
 
 /* ======================QUALIFICATION======================== */
