@@ -1,15 +1,12 @@
 /* ======================NAVBAR======================== */
-$(".nav__menu").hide();
+
 $(".menu__btn").click(()=>{
-    $(".menu__btn").hide();
-    $(".nav__menu").fadeIn(1000);
+   
+    $(".nav__menu").addClass("menu__show");
 
 })
 $(".menu__close").click(()=>{
-    $(".nav__menu").fadeOut(1000,()=>{
-
-        $(".menu__btn").show();
-    });
+    $(".nav__menu").removeClass("menu__show");
 })
 
 /* ======================HOME======================== */
