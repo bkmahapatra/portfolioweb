@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 :root {
     --header-height: 3rem;
 
@@ -19,7 +18,8 @@
     --container-color: #FFF;
 
     /* FONT AND TYPOGRAPY */
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+
 
 
     /* 0.5rem= 8px, 1rem=16px ...*/
@@ -32,8 +32,11 @@
     --smaller-font-size: .75rem;
 
     /*font weight */
+    --font-regular: 400;
     --font-medium: 500;
     --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
 
 
     /* margins bottom...*/
@@ -79,7 +82,7 @@ html {
 
 body {
     margin: 0 0 var(--header-height) 0;
-    font-family: Helvetica, sans-serif;
+    font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: black;
@@ -112,7 +115,7 @@ a {
 .header{
     background-color: rgb(1, 1, 52);
     width: 100%;
-    height: 40px;
+    height: 3rem;
 }
 .nav__bar{
     display: flex;
@@ -120,7 +123,8 @@ a {
     justify-content: space-between;
 }
 .nav__logo {
-    font-size: 35px;
+    font-weight: var(--font-semi-bold);
+    font-size: 30px;
     z-index: 1;
 }
 .menu__btn{
@@ -153,11 +157,32 @@ a {
 .nav__item{
     padding: 5px;
 }
-.menu__hide{
-    visibility: hidden;
+/* container */
+.container{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+.container i{
+    color: black;
 }
 
 /* ======================HOME======================== */
+.home_container{
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+h1{
+    font-weight: var(--font-extra-bold);
+    font-size: 70px;
+    text-align: center;
+    color: #fff714;
+    text-shadow: 2px 2px 5px   rgb(255, 238, 83);
+}
+h1::first-letter{
+    font-size: 100px;
+}
 
 /* ======================ABOUT======================== */
 
