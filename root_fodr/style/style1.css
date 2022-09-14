@@ -3,10 +3,21 @@
     --header-height: 3rem;
 
     /*colors 46*/
-    --hue-color: 250;
+    --hue-color: 14;
+
+    --main-color: hsl(14,100%,62%);
+    --main-color-light: hsl(14,97%,67%);
+    --main-color-dark: hsl(14, 96%, 41%);
+    --first-text-color: hsl(224,37%,16%);
+    --first-text-color-light: hsl(224, 28%, 33%);
+    --second-text-color: hsl(226,68%,63%);
+    --text-color-regular: hsl(14,0%,90%);
+    --text-color-regular-light: hsl(14,14%,97%);
+    
+
 
     /* hsl color modes*/
-    --first-color: hsl(var(--hue-color), 69%, 61%);
+    /* --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -15,7 +26,8 @@
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #FFF;
+    --container-color: #FFF; */
+
 
     /* FONT AND TYPOGRAPY */
     --body-font: 'Open Sans', sans-serif;
@@ -23,7 +35,7 @@
 
 
     /* 0.5rem= 8px, 1rem=16px ...*/
-    --big-font-size: 2rem;
+    --big-font-size: 3rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.124rem;
@@ -107,7 +119,7 @@ a {
 }
 
 .header{
-    background-color: rgb(84,104,245);
+    background-color: hsl(224,37%,16%);
     width: 100%;
     top: 0;
     left: 0;
@@ -164,25 +176,63 @@ a {
     padding: 5px;
 }
 .nav__logo {
-    font-weight: var(--font-semi-bold);
-    font-size: 30px;   
+    font-weight: var(--font-bold);
+    font-size: 25px;   
+    padding-left: 5px;
 }
 /* container */
 .container{
-    margin: 5px;
-    padding: 5px;
-    border: 1px solid black;
+    
+    /* border: 1px solid black; */
 }
-.container i{
-    color: black;
+.section__heading{
+   text-align: center;
 }
 
 /* ======================HOME======================== */
 .home_container{
     height: 100vh;
     margin: 0;
-    background-color: hsl(46,100%,60%);
+    padding-top: 200px;
+    background-color: var(--first-text-color);
+    /* hsl(46,100%,60%); */
 
+}
+.home__data{
+    /* border-left: 2px solid white; */
+    margin-left: 20px;
+    padding-left: 5px;
+    color: white;
+}
+.home__data > .home__title{
+    color: var(--main-color);
+    font-weight: var(--font-extra-bold);
+    font-size: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    height: 75px;
+    text-shadow: 10px 5px 5px  rgb(28, 17, 13);    
+}
+.person{
+    padding-left: 10px;
+}
+.home__person-title{
+    font-size: 1.5rem;
+    margin-top: 100px;
+    font-weight: var(--font-semi-bold);
+    
+}
+.home__person-description{
+   padding-top: 20px;
+}
+.home__scroll>a{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 120px;
+}
+.home__scroll i{
+    color: var(--text-color-regular-light);
 }
 
 
