@@ -193,6 +193,8 @@ a {
 }
 .section__heading{
    text-align: center;
+   margin-bottom: 25px;
+   margin-bottom: 15px;
 }
 
 /* ======================HOME======================== */
@@ -295,11 +297,13 @@ a {
 }
 
 /* ======================SKILLS======================== */
-.skill_icon,.skill_arrow{
+.skill_arrow{
     color: var(--first-text-color-light);
     font-size: 2rem;
 }
 .skill_icon{
+    color: var(--first-text-color-light);
+    font-size: 1.5rem;
     margin-right: 10px;
 }
 .skill_arrow{
@@ -316,7 +320,7 @@ a {
     cursor: pointer;
 }
 .skill__title{
-   font-weight: var(--font-bold);
+   font-weight: var(--font-semi-bold);
    font-size: 1.3rem;
    color: var(--first-text-color);
 }
@@ -395,4 +399,117 @@ a {
 
 /* ======================CONTACTME======================== */
 
+.contact_icon{
+    color: var(--first-text-color-light);
+    font-weight: var(--font-medium);
+}
+.contact-box{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.me__phone{
+    margin-left: 10px;
+}
+.me_lable{
+    font-weight: var(--font-semi-bold);
+    font-size: 1.1rem;
+    
+}
+.me_box{
+    font-size: 0.9rem;
+    font-weight: var(--font-medium);
+    color: var(--first-text-color-light);
+}
+.contact__msgme{
+    margin-top: 20px;
+}
+.msg-box{
+    background-color: rgb(218, 218, 252);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.msg_lable{
+    color: var(--first-text-color-light);
+    font-weight: var(--font-medium);
+    font-size: 1rem;
+    margin-bottom: 5px;
+    size: 0.9rem;
+}
+.msg_input input{
+    font-family: var(--body-font);
+    color: var(--first-text-color-light);
+    font-weight: var(--font-medium);
+    font-size: 1rem;
+    appearance: none;
+    border-width: 0px;
+    border-style: none;
+    border-color: transparent;
+    border-image: none;
+    background-color: rgb(218, 218, 252);
+    width: 100%;
+}
+
+.msg_message{
+    height: 120px;
+}
+.msg_input input:focus-visible{
+    outline: none;
+    outline-style: none;
+    background-color: rgb(218, 218, 252);
+    
+}
+input:-internal-autofill-selected {
+    appearance: initial;
+    background-image: none;
+    background-color: rgb(218, 218, 252);
+    color: inherit;
+}
+textarea{
+    resize: none;
+    height: 100%;
+    width: 100%;
+    color: var(--first-text-color-light);
+    font-weight: var(--font-medium);
+    font-size: 1rem;
+    font-family: var(--body-font);
+    background-color: transparent;
+    border: none;
+}
+textarea:focus-visible{
+    outline: none;
+    outline-style: none;
+    background-color: transparent;
+}
+.contact_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.send__btn{
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: var(--font-medium);
+    background-color: var(--main-color-light);
+    color: var(--text-color-regular-light);
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.msg_btn_icon{
+    color: var(--text-color-regular-light);
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: var(--font-medium);
+}
 /* ======================FOOTER======================== */

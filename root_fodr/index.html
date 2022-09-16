@@ -256,7 +256,7 @@
         <section class="qulification section" id="qualification">
             <div class="section__heading">
                 <div class="section__title">EDUCATION</div>
-                <div class="section__subtitle"></div>
+                <div class="section__subtitle">My Personal Journey</div>
             </div>
             <div class="container quali_container">
 
@@ -266,7 +266,7 @@
         <section class="portfolio section" id="portfolio">
             <div class="section__heading">
                 <div class="section__title">PORTFOLIO</div>
-                <div class="section__subtitle"></div>
+                <div class="section__subtitle">Most Recent Works</div>
             </div>
             <div class="container portfolio_container">
 
@@ -276,43 +276,62 @@
         <section class="contactme section" id="contactme">
             <div class="section__heading">
                 <div class="section__title">CONTACT ME</div>
-                <div class="section__subtitle"></div>
+                <div class="section__subtitle">Get In Touch</div>
             </div>
             <div class="container contact_container">
-                <div class="contactme container">
-                    <div class="me__phone__num contact-box"><i class="uil uil-phone-alt"></i>7205243331</div>
-                    <div class="me__email contact-box"><i class="uil uil-envelope-alt"></i>bkmahapatra2017@yahoo.com
+                <div class="contact_me container">
+                    <div class="contact-box">
+                        <i class="uil uil-phone-alt contact_icon"></i>
+                        <div class="me__phone">
+                            <div class="me_lable">Call me</div>
+                            <div class="me_box">7205243331</div>
+                        </div>
                     </div>
-                    <div class="me__location contact-box"><i class="uil uil-map-marker-alt"></i>Rayagada, Odisha</div>
+                    <div class="contact-box">
+                        <i class="uil uil-envelope-alt contact_icon"></i>
+                        <div class="me__phone">
+                            <div class="me_lable">Email</div>
+                            <div class="me_box">bkmahapatra2017@yahoo.com</div>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <i class="uil uil-map-marker-alt contact_icon"></i>
+                        <div class="me__phone">
+                            <div class="me_lable">Location</div>
+                            <div class="me_box">Rayagada, Odisha</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="contact__msgme container">
                     <div>
-                        <div class="msg_name">
-                            <div class="name_lable">Name</div>
-                            <div class="name_input"><input type="text" name="name" id=""></div>
+                        <div class="msg_name msg-box">
+                            <div class="msg_lable">Name</div>
+                            <div class="msg_input"><input type="text"  id="con_name" minlength="4" maxlength="30"></div>
                         </div>
-                        <div class="msg_email">
-                            <div class="email_lable">Email</div>
-                            <div class="email_input"><input type="email" name="email" id=""></div>
+                        <div class="msg_email msg-box">
+                            <div class="msg_lable">Email</div>
+                            <div class="msg_input"><input type="text" id="con_email" minlength="6" maxlength="30"></div>
                         </div>
-                        <div class="msg_message">
-                            <div class="message_lable">Message</div>
-                            <div class="msg_input"><input type="textarea"></div>
+                        <div class="msg_message msg-box">
+                            <div class="msg_lable">Message</div>
+                            <div class="msg_input msg"><textarea name="msg" id="con_msg" cols="30" rows="5" minlength="6" maxlength="250"  ></textarea></div>
                         </div>
-
                     </div>
+                </div>
+                <div class="contact_btn">
+                    <div class="send__btn">Send<i class="uil uil-message msg_btn_icon"></i></div>
                 </div>
             </div>
         </section>
         <!-- ======================FOOTER======================== -->
-        <section class="footer section" id="footer">
+        <!-- <section class="footer section" id="footer">
             <div class="container footer_container">
                 <div class="copy_lable">
                     Copyright &copy;-2022. All rights are reserved.
                 </div>
             </div>
         </section>
-    </div>
+    </div> -->
 </body>
 
 </html>
