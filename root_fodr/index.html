@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style/style1.css">
+    <!-- Link Swiper's CSS https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css -->
+    <link rel="stylesheet" href="./style/swiper.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
+
     <script src="./script/jqueryUncomp.js" defer></script>
     <script src="./script/script1.js" defer></script>
 
@@ -96,7 +102,7 @@
         <!-- ======================SKILLS======================== -->
         <section class="skills section " id="skills">
             <div class="section__heading">
-                <div class="section__title">SKILLS</div>
+                <div class="section__title">Skills</div>
                 <div class="section__subtitle">My Technical Level</div>
             </div>
             <div class="container skills_container">
@@ -255,7 +261,7 @@
         <!-- ======================QUALIFICATION======================== -->
         <section class="qulification section" id="qualification">
             <div class="section__heading">
-                <div class="section__title">EDUCATION</div>
+                <div class="section__title">Education</div>
                 <div class="section__subtitle">My Personal Journey</div>
             </div>
             <div class="container quali_container">
@@ -265,17 +271,66 @@
         <!-- ======================PORTFOLIO======================== -->
         <section class="portfolio section" id="portfolio">
             <div class="section__heading">
-                <div class="section__title">PORTFOLIO</div>
+                <div class="section__title">Portfolio</div>
                 <div class="section__subtitle">Most Recent Works</div>
             </div>
             <div class="container portfolio_container">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="project_1 project">
+                                <img src="./images/bk1.jpeg" alt="" class="project_img">
+                                <div class="project_title">NewsApp</div>
+                                <div class="project_desc">A news app using yahoo weather api this is veyr awsonme n
+                                    everybody wants to use this </div>
+                                <div class="project_btn">
+                                    Demo
+                                    <i class="uil uil-arrow-right project_icon"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="project_2 project">
+                                <img src="./images/bk1.jpeg" alt="" class="project_img">
+                                <div class="project_title">NewsApp</div>
+                                <div class="project_desc">A news app using yahoo weather api this is veyr awsonme n
+                                    everybody wants to use this </div>
+                                <div class="project_btn">
+                                    Demo
+                                    <i class="uil uil-arrow-right project_icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project_3 project">
+                                <img src="./images/bk1.jpeg" alt="" class="project_img">
+                                <div class="project_title">NewsApp</div>
+                                <div class="project_desc">A news app using yahoo weather api this is veyr awsonme n
+                                    everybody wants to use this </div>
+                                <div class="project_btn">
+                                    Demo
+                                    <i class="uil uil-arrow-right project_icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"><i class="uil uil-angle-right swiper_btn"></i></div>
+                    <div class="swiper-button-prev"><i class="uil uil-angle-left swiper_btn"></i></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+
 
             </div>
         </section>
         <!-- ======================CONTACTME======================== -->
         <section class="contactme section" id="contactme">
             <div class="section__heading">
-                <div class="section__title">CONTACT ME</div>
+                <div class="section__title">Contact Me</div>
                 <div class="section__subtitle">Get In Touch</div>
             </div>
             <div class="container contact_container">
@@ -306,7 +361,7 @@
                     <div>
                         <div class="msg_name msg-box">
                             <div class="msg_lable">Name</div>
-                            <div class="msg_input"><input type="text"  id="con_name" minlength="4" maxlength="30"></div>
+                            <div class="msg_input"><input type="text" id="con_name" minlength="4" maxlength="30"></div>
                         </div>
                         <div class="msg_email msg-box">
                             <div class="msg_lable">Email</div>
@@ -314,7 +369,8 @@
                         </div>
                         <div class="msg_message msg-box">
                             <div class="msg_lable">Message</div>
-                            <div class="msg_input msg"><textarea name="msg" id="con_msg" cols="30" rows="5" minlength="6" maxlength="250"  ></textarea></div>
+                            <div class="msg_input msg"><textarea name="msg" id="con_msg" cols="30" rows="5"
+                                    minlength="6" maxlength="250"></textarea></div>
                         </div>
                     </div>
                 </div>
