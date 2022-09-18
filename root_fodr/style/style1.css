@@ -707,3 +707,30 @@ textarea:focus-visible {
 }
 
 /* ======================FOOTER======================== */
+.footer_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--first-text-color);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.media_links{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.media_links a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+.media_links i{
+    font-weight: 100;
+    font-size: 25px;
+    
+}
+.copy_lable{
+    color: white;
+    padding-top: 20px;
+    font-size: 1rem;
+    font-weight: var(--font-medium);
+}
