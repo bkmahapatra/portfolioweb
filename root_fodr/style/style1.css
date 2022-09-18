@@ -91,6 +91,7 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
@@ -99,8 +100,7 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--container-color);
     color: black;
-    height: 100%;
-
+    
 }
 
 
@@ -726,7 +726,7 @@ textarea:focus-visible {
 .media_links i{
     font-weight: 100;
     font-size: 25px;
-    
+
 }
 .copy_lable{
     color: white;
