@@ -7,11 +7,13 @@
     --hue-color: 14;
 
     --main-color: hsl(14, 100%, 62%);
+    --main-color-semi-dark: hsl(14, 89%, 56%);
     --main-color-light: hsl(14, 97%, 67%);
     --main-color-dark: hsl(14, 96%, 41%);
     --first-text-color: hsl(224, 37%, 16%);
     --first-text-color-light: hsl(224, 28%, 33%);
     --second-text-color: hsl(226, 68%, 63%);
+    --second-text-color-dark: hsl(226, 69%, 54%);
     --text-color-regular: hsl(14, 0%, 90%);
     --text-color-regular-light: hsl(14, 14%, 97%);
     --container-color: hsl(14, 0%, 95%);
@@ -142,7 +144,7 @@ a {
     width: 100%;
     top: 0;
     right: -100%;
-    background-color: #010101;
+    background-color: var(--first-text-color);
     transition: .5s;
 }
 
@@ -164,7 +166,7 @@ a {
 
 .menu__main {
     height: 100vh;
-    background-color: rgb(9, 9, 9);
+    background-color: var(--first-text-color);
 }
 
 .menu__btn {
@@ -179,7 +181,12 @@ a {
     font-size: 30px;
     text-align: center;
 }
-
+.nav__list a{
+    font-weight: var(--font-semi-bold);
+}
+.nav__item:hover a{
+    color: var(--main-color);
+}
 .nav__item {
     padding: 5px;
 }
@@ -255,7 +262,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 .home__scroll i {
@@ -273,7 +280,8 @@ a {
 }
 
 .about_desc {
-    font-weight: var(--font-regular);
+    font-size: 1rem;
+    font-weight: var(--font-medium);
     justify-self: center;
     text-align: center;
     color: var(--first-text-color-light);
@@ -285,7 +293,7 @@ a {
 }
 
 .about__btn {
-    background-color: var(--main-color-light);
+    background-color: var(--main-color);
     padding: 3px;
     width: 150px;
 
@@ -295,10 +303,17 @@ a {
     margin-top: 15px;
     font-weight: var(--font-semi-bold);
 }
+.about__btn:hover  {
+    background-color: var(--main-color-semi-dark);
 
+}
+.about__btn a:hover i{
+    transform: translateY(15%)
+}
 .btn>i {
     font-size: 15px;
     margin-left: 5px;
+    transition: .2s;
 }
 
 .btn {
@@ -572,9 +587,15 @@ a {
     height: 40px;
     width: 100px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
+    box-shadow: 0 0 5px 0.5px rgb(10, 10, 10);
 }
-
+.project_btn:hover{
+    background-color: var(--second-text-color-dark) ;
+}
+.project_btn:hover i{
+    transform: translateX(15%);
+}
 /* ======================CONTACTME======================== */
 
 .contact_icon {
@@ -606,7 +627,7 @@ a {
 }
 
 .contact__msgme {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .msg-box {
@@ -688,7 +709,7 @@ textarea:focus-visible {
     border-radius: 10px;
     font-size: 20px;
     font-weight: var(--font-medium);
-    background-color: var(--main-color-light);
+    background-color: var(--main-color);
     color: var(--text-color-regular-light);
 
     display: flex;
@@ -698,14 +719,18 @@ textarea:focus-visible {
     margin-top: 15px;
     margin-bottom: 20px;
 }
-
+.send__btn:hover{
+    background-color: var(--main-color-semi-dark);
+}
 .msg_btn_icon {
     color: var(--text-color-regular-light);
     margin-left: 5px;
     font-size: 20px;
     font-weight: var(--font-medium);
 }
-
+.send__btn:hover i{
+    transform: translateX(15%);
+}
 /* ======================FOOTER======================== */
 .footer_section{
     display: flex;
@@ -728,9 +753,18 @@ textarea:focus-visible {
     font-size: 25px;
 
 }
+.media_links a:hover i{
+    color: var(--main-color);
+}
 .copy_lable{
     color: white;
     padding-top: 20px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: var(--font-medium);
+}
+
+
+/* ========================media==================== */
+@media only screen and (min-width: 600px) {
+    
 }

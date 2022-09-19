@@ -3,12 +3,15 @@
 $(".menu__btn").click(() => {
   $(".nav__menu").addClass("menu__show");
 });
+
 $(".menu__close").click(() => {
   $(".nav__menu").removeClass("menu__show");
 });
 
 /* ======================HOME======================== */
-
+$(".nav__links").click(()=>{
+  $(".nav__menu").removeClass("menu__show");
+})
 /* ======================ABOUT======================== */
 let s1 = false;
 $(".skill1 .skill__heading").click(() => {
